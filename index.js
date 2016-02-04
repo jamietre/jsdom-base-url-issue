@@ -4,7 +4,6 @@ var fs = require('fs');
 
 var app = express();
 app.use("/", express.static(__dirname+'/http/'));
-app.use("/scripts", express.static(__dirname+'/http/styles'));
 
 var server = app.listen(5000);
 

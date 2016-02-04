@@ -7,7 +7,7 @@ app.use("/", express.static(__dirname+'/http/'));
 
 var server = app.listen(5000);
 
-var defaultDocumentFeatures = {
+jsdom.defaultDocumentFeatures = {
     FetchExternalResources   : ['link']
 };
 
